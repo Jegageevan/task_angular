@@ -1,0 +1,16 @@
+<section>
+<header>
+    <h2>{{name}}</h2>
+    <menu>
+        <button>add tash</button>
+    </menu>
+  
+</header>
+<ul>
+    @for(user1 of users ; track user1.id){
+       <li>
+           <app-task [user]="user1"></app-task>
+       </li>
+   }
+   </ul>
+</section>
